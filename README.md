@@ -1,4 +1,4 @@
-# TeleJS - Telegtam API implementation for JS
+# TeleJS - Telegram API implementation for JS
 
 TeleJS is a pure JavaScript implementation of Telegram MTP protocol.
 
