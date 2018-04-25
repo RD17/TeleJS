@@ -1,0 +1,50 @@
+{
+  "name": "telejs",
+  "version": "0.1.7",
+  "description": "JavaScript library to work with Telegram API",
+  "homepage": "https://github.com/RD17/TeleJS",
+  "main": "lib/telejs.min.js",
+  "scripts": {
+    "build": "webpack --env dev && webpack --env build",
+    "dev": "webpack --progress --colors --watch --env dev",
+    "test": "mocha --require babel-core/register --colors ./test/*.spec.js",
+    "test:watch": "mocha --require babel-core/register --colors -w ./test/*.spec.js"
+  },
+  "keywords": [
+    "telegram"
+  ],
+  "author": "RD17 LLC",
+  "babel": {
+    "presets": [
+      "env"
+    ],
+    "plugins": [
+      "babel-plugin-add-module-exports",
+      "transform-object-rest-spread"
+    ],
+    "sourceMaps": true,
+    "retainLines": true
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.0",
+    "babel-eslint": "^8.0.3",
+    "babel-loader": "^7.1.2",
+    "babel-plugin-add-module-exports": "^0.2.1",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
+    "babel-preset-env": "^1.6.1",
+    "chai": "^4.1.2",
+    "eslint": "^4.13.1",
+    "eslint-loader": "^1.9.0",
+    "mocha": "^4.0.1",
+    "webpack": "^3.10.0",
+    "yargs": "^10.0.3"
+  },
+  "dependencies": {
+    "axios": "^0.17.1",
+    "crypto-js": "^3.1.9-1",
+    "moment": "^2.22.1",
+    "rusha": "^0.8.9"
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "env": {
+    "es6": true,
+    "node": true
+  },
+  "globals": {},
+  "parser": "babel-eslint",
+  "plugins": [],
+  "rules": {}
+}
